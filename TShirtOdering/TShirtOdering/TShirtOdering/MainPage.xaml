@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtOderingApp.MainPage" BackgroundImageSource="Splash_logo.jpg" >
+    <ContentPage.Content>
+        <ScrollView>
+
+
+        
+            <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+                <Label Text="Ordering Page" FontSize="Large" TextColor="Red" HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="Name" TextColor="Red" />
+                <Entry Text="{Binding Name}" />
+                <Label Text="Gender" TextColor="Red"/>
+                <Entry Text="{Binding Gender}"/>
+                <Label Text="TShirtSize" TextColor="Red"/>
+                <Entry Text="{Binding TShirtSize}"/>
+                <Label Text="DateofOrder" TextColor="Red" />
+                <Entry Text="{Binding DateofOrder}" />
+                <Label Text="TShirtColor" TextColor="Red" />
+                <Entry Text="{Binding TShirtColor}" />
+                <Label Text="ShippingAddress" TextColor="Red" />
+                <Entry Text="{Binding ShippingAddress}" />
+                <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked" BackgroundColor="Transparent" FontSize="Large"/>
+
+                <Button x:Name="CancelButton" Text="Cancel" Clicked="CancelButton_Clicked" BackgroundColor="Transparent" FontSize="Large"/>
+                <Button Text="Orders" Clicked="Button_Clicked" BackgroundColor="Transparent" FontSize="Large"/>
+
+
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

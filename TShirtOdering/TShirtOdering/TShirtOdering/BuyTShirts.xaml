@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TShirtOderingApp.BuyTShirts" 
+             
+             BackgroundColor="Red" >
+    
+    <ContentPage.Content>
+        <ScrollView>
+        
+        <StackLayout>
+                <Label x:Name="TShirtsForSale" Text="Liverpool 4 Life" TextColor="Black" FontSize="Large" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/> 
+                <ImageButton Source= "Liverpool2.jpg" Clicked="ImageButton_Clicked"  />
+                <Label Text="New School" FontSize="Large" HorizontalOptions="CenterAndExpand"  TextColor="Black"/>
+
+                <ImageButton Source="Liverpool3.jpg" Clicked="ImageButton_Clicked" />
+                <Label Text="Old School" FontSize="Large" HorizontalOptions="CenterAndExpand"  TextColor="Black"/>
+
+                <ImageButton Source="Liverpool4.png" Clicked="ImageButton_Clicked"/>
+                <Label Text="The Beatles" FontSize="Large"  TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+
+               
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
